@@ -1,0 +1,36 @@
+<section id="contacto" class="py-5 bg-fondo-claro">
+  <div class="container">
+    <h2 class="text-principal text-center mb-5">Contáctanos</h2>
+    <div class="row">
+      <!-- Información de contacto -->
+      <div class="col-lg-6 mb-4">
+        <h5 class="text-principal">Información de Contacto</h5>
+        <p><strong>Dirección:</strong> Cl 19 #Cra 12, Bloque morado local E-13, Pereira, Risaralda, Colombia</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/573042115684" target="_blank" rel="noopener noreferrer">+57 304 211 5684</a></p>
+        <p><strong>Teléfono:</strong> +57 322 305 8784</p>
+        <p><strong>Correo Electrónico:</strong> contacto@conexionjudicial.com.co</p>
+      </div>
+      <!-- Formulario de contacto -->
+      <div class="col-lg-6">
+        <form action="/enviar-mensaje" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required />
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+            <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+          </div>
+          <button type="submit" class="btn btn-principal">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
